@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-poc"
+version = "0.1.0"
+description = ""
+authors = ["Patrick Rodrigues <patrick.pwall@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.2"
+djangorestframework = "^3.14.0"
+dj-database-url = "^1.0.0"
+psycopg2 = "^2.9.4"
+
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
